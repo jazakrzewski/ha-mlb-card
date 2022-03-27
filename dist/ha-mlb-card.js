@@ -151,9 +151,6 @@ class MLBCard extends LitElement {
             .divider { font-size: 2.5em; text-align: center; margin: 0 4px; }
             .name { font-size: 1.4em; margin-bottom: 4px; }
             .line { height: 1px; background-color: var(--primary-text-color); margin:10px 0; }
-            .timeouts { margin: 0 auto; width: 70%; }
-            .timeouts div.opponent-to:nth-child(-n + ${stateObj.attributes.opponent_timeouts})  { opacity: 1; }
-            .timeouts div.team-to:nth-child(-n + ${stateObj.attributes.team_timeouts})  { opacity: 1; }
             .team-to { height: 6px; border-radius: ${toRadius}px; border: ${clrOut}px solid ${outColor}; width: 20%; background-color: ${teamColor}; display: inline-block; margin: 0 auto; position: relative; opacity: 0.2; }
             .opponent-to { height: 6px; border-radius: ${toRadius}px; border: ${clrOut}px solid ${outColor}; width: 20%; background-color: ${oppoColor}; display: inline-block; margin: 0 auto; position: relative; opacity: 0.2; }
             .status { text-align:center; font-size:1.6em; font-weight: 700; }
@@ -184,11 +181,6 @@ class MLBCard extends LitElement {
                 <img src="${stateObj.attributes.team_logo}" />
                 <div class="name">${stateObj.attributes.team_name}</div>
                 <div class="record">${stateObj.attributes.team_record}</div>
-                <div class="timeouts">
-                  <div class="team-to"></div>
-                  <div class="team-to"></div>
-                  <div class="team-to"></div>
-                </div>
               </div>
               <div class="teamposs">&bull;</div>
               <div class="score">${stateObj.attributes.team_score}</div>
@@ -199,11 +191,6 @@ class MLBCard extends LitElement {
                 <img src="${stateObj.attributes.opponent_logo}" />
                 <div class="name">${stateObj.attributes.opponent_name}</div>
                 <div class="record">${stateObj.attributes.opponent_record}</div>
-                <div class="timeouts">
-                  <div class="opponent-to"></div>
-                  <div class="opponent-to"></div>
-                  <div class="opponent-to"></div>
-                </div>
               </div>
             </div>
             <div class="play-clock">${stateObj.attributes.inning_detail}</div>
