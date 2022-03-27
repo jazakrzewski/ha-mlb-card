@@ -197,7 +197,7 @@ class MLBCard extends LitElement {
             <div class="line"></div>
             <div class="sub2">
               <div class="venue">${stateObj.attributes.venue}</div>
-             <div class="down-distance">${stateObj.attributes.down_distance_text}</div>
+             <div class="down-distance">Balls: ${stateObj.attributes.balls} Strikes: ${stateObj.attributes.strikes} Outs: ${stateObj.attributes.outs}</div>
             </div>
             <div class="sub3">
               <div class="location">${stateObj.attributes.location}</div>
