@@ -1,5 +1,10 @@
-# Home Assistant NFL Card
-A Home Assistant frontend custom card for the [ha-nfl](https://github.com/zacs/ha-nfl) integration.
+# Home Assistant MLB Card
+A Home Assistant frontend custom card for the [ha-mlb](https://github.com/jazakrzewski/ha-mlb) integration.
+
+Forked from [ha-nfl-card](https://github.com/D34DC3N73R/ha-nfl-card). Thanks @D34DC3N73R
+
+
+# Info to be updated
 
 #### &nbsp;&nbsp;&nbsp;PREGAME
 
