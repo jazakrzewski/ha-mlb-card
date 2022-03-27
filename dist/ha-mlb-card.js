@@ -1,6 +1,6 @@
 import { html, LitElement } from "https://unpkg.com/lit?module";
 
-class NFLCard extends LitElement {
+class MLBCard extends LitElement {
 
   static get properties() {
     return {
@@ -206,7 +206,7 @@ class NFLCard extends LitElement {
                 </div>
               </div>
             </div>
-            <div class="play-clock">Q${stateObj.attributes.quarter} - ${stateObj.attributes.clock}</div>
+            <div class="play-clock">${stateObj.attributes.inning_detail}</div>
             <div class="line"></div>
             <div class="sub2">
               <div class="venue">${stateObj.attributes.venue}</div>
@@ -335,10 +335,10 @@ class NFLCard extends LitElement {
         </style>
         <ha-card>
           <div class="card">
-            <img class="team-bg" src="https://a.espncdn.com/i/espn/misc_logos/500/nfl.png" />
+            <img class="team-bg" src="https://a.espncdn.com/i/espn/misc_logos/500/mlb.png" />
             <div class="card-content">
               <div class="team">
-                <img src="https://a.espncdn.com/i/espn/misc_logos/500/nfl.png" />
+                <img src="https://a.espncdn.com/i/espn/misc_logos/500/mlb.png" />
               </div>
               <div class="eos">Better Luck<br />Next Year</div>
             </div>
@@ -349,4 +349,4 @@ class NFLCard extends LitElement {
   }
 }
 
-customElements.define("nfl-card", NFLCard);
+customElements.define("mlb-card", MLBCard);
