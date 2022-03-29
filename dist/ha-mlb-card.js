@@ -322,12 +322,12 @@ class MLBCard extends LitElement {
         </style>
         <ha-card>
           <div class="card">
-            <img class="team-bg" src="https://a.espncdn.com/i/espn/misc_logos/500/mlb.png" />
+            <img class="team-bg" src="${stateObj.attributes.team_logo}" />
             <div class="card-content">
               <div class="team">
-                <img src="https://a.espncdn.com/i/espn/misc_logos/500/mlb.png" />
+                <img src="${stateObj.attributes.team_logo}" />
               </div>
-              <div class="eos">Better Luck<br />Next Year</div>
+              <div class="eos">No Game<br />Today</div>
             </div>
           </div>
         </ha-card>
