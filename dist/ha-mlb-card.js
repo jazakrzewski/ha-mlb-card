@@ -265,7 +265,7 @@ class MLBCard extends LitElement {
               </div>
               <div class="line"></div>
               <div class="sub1">
-                <div class="date">Kickoff ${stateObj.attributes.kickoff_in}</div>
+                <div class="date">First Pitch ${stateObj.attributes.kickoff_in}</div>
                 <div class="odds">${stateObj.attributes.odds}</div>
               </div>
               <div class="sub2">
